@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #00334e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  color: white;
+  width: 100%;
+  text-align: center;
+
+  h2 {
+    font-weight: 300;
+    font-size: 4.25rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .display {
+      width: 70%;
+      .input,
+      .result {
+        min-height: 40px;
+        background-color: white;
+        color: #000;
+        text-align: right;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border-bottom: 1px solid black;
+      }
+    }
+
+    .keyboard {
+      width: 70%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 4px;
+
+      button {
+        border: none;
+        font-family: inherit;
+        font-size: 2rem;
+        margin: 2px 0px;
+        padding: 10px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      .follow {
+        font-size: 1.25rem;
+        font-style: italic;
+      }
+
+      button:active {
+        background: #8d93ab;
+        color: white;
+      }
+
+      .follow:active {
+        background: #ee6f57;
+        color: whitesmoke;
+      }
+
+      .symbol:active {
+        background: #6f4a8e;
+      }
+
+      .number:active {
+        background: #206a5d;
+      }
+    }
+  }
+
+  .last-line {
+    font-weight: 300;
+  }
+}
