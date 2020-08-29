@@ -11,6 +11,7 @@ const equals = document.querySelector(".equals");
 const input = document.querySelector(".input");
 const result = document.querySelector(".result");
 const allClearBtn = document.querySelector(".all-clear");
+const followMeBtn = document.querySelector(".follow");
 
 let operandOne;
 let operandTwo;
@@ -129,3 +130,8 @@ const doCalculation = (operandOne, operator, operandTwo) => {
       return parseFloat(operandOne);
   }
 };
+
+// Follow Me
+followMeBtn.addEventListener("click", () => {
+  window.open("https://twitter.com/PlabanKrMondal");
+});
